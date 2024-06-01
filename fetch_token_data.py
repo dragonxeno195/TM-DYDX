@@ -12,7 +12,7 @@ def fetch_and_save_token_data():
     if response.status_code == 200:
         token_data = response.json()
         try:
-            with open('C:/Users/bjhof/Documents/crypto_business/bot/token_data.json', 'w') as f:
+            with open('token_data.json', 'w') as f:
                 json.dump(token_data, f)
             print("Token data fetched and saved successfully.")
         except IOError as e:
